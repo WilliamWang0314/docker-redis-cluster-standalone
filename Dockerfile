@@ -8,6 +8,8 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 COPY install.sh /
 RUN /bin/sh install.sh
 
+COPY add_redis_cluster_passwd.sh /
+
 COPY mem.sh /export/scripts/
 RUN  chmod 755 /export/scripts/mem.sh
 
