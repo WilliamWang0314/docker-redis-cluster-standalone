@@ -1,4 +1,5 @@
 # docker-redis-cluster-standalone
+```
 #部署3个项目的redis-cluster
 [root@192-168-5-36 ~]# docker run -d --name  project1-redis-cluster -p 7001-7006:7001-7006/tcp tkyw/redis-cluster-standalone
 32745a606a6d2c512400a3d31de9f704a9f48dcbe01f87bee709e94c806921a6
@@ -57,3 +58,4 @@ mem_fragmentation_ratio:3.84
 mem_allocator:jemalloc-4.0.3
 active_defrag_running:0
 lazyfree_pending_objects:0
+```
